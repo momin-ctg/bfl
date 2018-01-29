@@ -1,0 +1,225 @@
+a, a:hover{
+    text-decoration: none;
+}
+/* =================================
+           For Main Navigation
+   ================================= */
+
+
+/* =================================
+       For Large Background Area
+   ================================= */
+    .large_bgarea{
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .largeText{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .largeText h1{
+        color:#ffffff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: "PT Sans",sans-serif;
+    }
+
+    /* =================================
+        For Arbitrary View
+       ================================= */
+.fonts_area{
+    margin-top: -300px;
+    overflow: hidden;
+}
+
+.expand_layout{
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 2px #ddd;
+}
+.expand_layout img{
+    margin-bottom: 30px;
+}
+
+/* =================================
+         For All Fonts Area
+   ================================= */
+
+.allFonts{
+    border-top:1px solid #757575;
+    display: flex;
+    width: 100%;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.allFonts a{
+    text-decoration: none;
+    color:#757575;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.allFonts a:hover{
+    text-decoration: none;
+    color:#757575;
+}
+
+
+/* =================================
+           For Main Footer
+   ================================= */
+.footer_area{
+    background: #171717;
+    color:#ffffff;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.bf_newsletter{
+    padding-bottom: 120px;
+}
+.bf_newslettertext p:nth-of-type(1){
+    font-weight: 400;
+    font-family: "PT Sans",sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    color:#b4b4b4;
+}
+
+.bf_newslettertext p:nth-of-type(2){
+    font-size: 22px;
+    line-height: 1.2;
+    color:#b4b4b4;
+}
+
+.newsletter_form form input[type=email]{
+    background: #171717;
+    border:none;
+    width:100%;
+    color:#fafafa;
+    font-size: 20px;
+    line-height: 1.8em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3e3e3e;
+    text-align: center;
+}
+
+.newsletter_form form input[type=email]:focus{
+    outline: none;
+}
+
+.newsletter_form ::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.newsletter_form :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+.newsletter_form::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+}
+
+.newsletter_form :-ms-input-placeholder {
+    text-align: center;
+}
+
+.footerMid{
+    border-top: 1px solid #3e3e3e;
+    padding-top:60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.phoneNumber ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.newsArea ul{
+    margin: 0;
+    padding: 0;
+}
+.help ul{
+    margin: 0;
+    padding: 0;
+}
+.phoneNumber li{
+    list-style: none;
+    display: inline-block;
+}
+.phoneNumber a{
+    color: #ffffff;
+}
+.bf_social{
+    display: inline-block;
+    margin-top: 10px;
+}
+.bf_social a{
+    margin-right: 5px;
+    font-size: 18px;
+    display: inline-block;
+    width: 36px;
+    height:36px;
+    color:#171717;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+}
+.newsArea li{
+    list-style:none;
+    display: block;
+}
+.newsArea a{
+    color:#ffffff;
+}
+.newsArea a:hover{
+    color:inherit;
+    text-decoration: none;
+}
+
+.help li{
+    list-style: none;
+    display: block;
+}
+.help a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*For Bottom Footer*/
+.bottom_footer{
+    padding-top: 20px;
+}
+.copyrightText small{
+    color:#2a2a2a;
+}
+
+.copyrightCenter small{
+    color:#2a2a2a;
+}
+.back_to_top a{
+    color: #b4b4b4;
+}
+.back_to_top a:hover{
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+
+
+
