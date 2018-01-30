@@ -5,29 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangla Font Library | CoDesign</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
 <!-- ===================================
                 Main Navigation
       =================================== -->
-<div class="bf_navigationArea">
+<div class="bf_navigationArea fixed-top">
     <div class="bf_navigation">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row align-items-center p-4 px-md-4" style="background: #000000">
-                <a class="my-0 mr-md-auto font-weight-normal text-light"><h2>BFL</h2>
+        <div class="container-fluid p-0">
+            <div class="d-flex flex-column flex-md-row align-items-center py-xl-3 py-md-3 py-sm-0 px-md-4"
+                 style="background: #000000">
+                <a class="logo my-0 mr-md-auto font-weight-normal text-light"><h2>BFL</h2>
                 </a>
-                <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-4 text-light" href="#">News</a>
-                    <a class="p-4 text-light" href="#">fonts</a>
-                    <a class="p-4 text-light" href="#"><i class="fa fa-navicon"></i></a>
-                    <a class="p-4 text-light" href="#"><i class="fa fa-shopping-basket"></i></a>
-                    <a class="p-4 text-light" href="#"><i class="fa fa-user"></i></a>
-
+                <nav class="right_nav my-2 my-md-0 mr-md-3">
+                    <a class="p-3" href="#">Library</a>
+                    <a class="p-3" href="#">About</a>
+                    <a class="p-3" href="#">EN</a>
+                    <a class="p-3" href="#">BN</a>
                 </nav>
             </div>
         </div>
@@ -39,10 +38,13 @@
       =================================== -->
 
 <div class="large_bgarea">
-    <div class="largeText ">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, perspiciatis!</h1>
+    <div class="largeText">
+        <p>Bangla Font Library is a digital type directory,</p> <br>
+        <p> distributing quality bangla fonts for regultar and </p> <br>
+        <p>commercial usage.</p>
     </div>
 </div>
+
 
 <!-- ===================================
            Arbitrary Content Area
@@ -57,38 +59,44 @@
                 <div class="expand_layout">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/H4bbqpA.jpg" alt="">
+                            <img class="img-fluid" src="images/1.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/9Q9pgmR.jpg" alt="">
+                            <img class="img-fluid" src="images/2.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/DYd7Sri.jpg" alt="">
+                            <img class="img-fluid" src="images/3.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/ZwaMNmO.jpg" alt="">
+                            <img class="img-fluid" src="images/4.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/OGjfnyH.jpg" alt="">
+                            <img class="img-fluid" src="images/5.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/H4bbqpA.jpg" alt="">
+                            <img class="img-fluid" src="images/6.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/9Q9pgmR.jpg" alt="">
+                            <img class="img-fluid" src="images/7.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/DYd7Sri.jpg" alt="">
+                            <img class="img-fluid" src="images/8.jpg" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <img class="img-fluid" src="https://i.imgur.com/ZwaMNmO.jpg" alt="">
+                            <img class="img-fluid" src="images/9.jpg" alt="">
                         </div>
 
                     </div>
                     <div class="allfonts_area">
 
-                                <div class="allFonts text-center">
-                                    <a href="">view all fonts <span>(20)</span></a>
+                        <div class="news-paginator pace-running" id="more-news-paginator">
+                            <a class="more-entries-pagination-link"
+                               href="">
+			<span>
+				View All Fonts
+				<span class="count">(5)</span>
+			</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +108,7 @@
 
 <!-- ===================================
                 Main Footer Area
-      =================================== -->
+     =================================== -->
 <div class="footer_area">
     <footer class="footer">
         <div class="container">
@@ -114,7 +122,12 @@
                         </div>
                         <div class="newsletter_form text-center">
                             <form action="">
-                                <input type="email" name="" id="" placeholder="Your Email Address">
+                                <fieldset>
+                                    <input type="email" name="" id="" placeholder="Your Email Address">
+                                    <button type="submit" class="newsletter-submit"><span><img width="30" height="30"
+                                                                                               src="images/email.svg"
+                                                                                               alt=""></span></button>
+                                </fieldset>
                             </form>
                         </div>
                     </div>

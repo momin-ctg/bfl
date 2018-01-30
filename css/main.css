@@ -1,9 +1,82 @@
+/*All Fonts Library*/
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Bold.otf')  format('opentype'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf')  format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Regular.otf')  format('opentype'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GaramondPremrPro-Disp';
+    src: url('../fonts/GaramondPremrPro-Disp.eot?#iefix') format('embedded-opentype'),  url('../fonts/GaramondPremrPro-Disp.otf')  format('opentype'),
+    url('../fonts/GaramondPremrPro-Disp.woff') format('woff'), url('../fonts/GaramondPremrPro-Disp.ttf')  format('truetype'), url('../fonts/GaramondPremrPro-Disp.svg#GaramondPremrPro-Disp') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GaramondPremrPro';
+    src: url('../fonts/GaramondPremrPro.eot?#iefix') format('embedded-opentype'),  url('../fonts/GaramondPremrPro.otf')  format('opentype'),
+    url('../fonts/GaramondPremrPro.woff') format('woff'), url('../fonts/GaramondPremrPro.ttf')  format('truetype'), url('../fonts/GaramondPremrPro.svg#GaramondPremrPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd-ExtraBold';
+    src: url('../fonts/FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FuturaStd-ExtraBold.otf')  format('opentype'),
+    url('../fonts/FuturaStd-ExtraBold.woff') format('woff'), url('../fonts/FuturaStd-ExtraBold.ttf')  format('truetype'), url('../fonts/FuturaStd-ExtraBold.svg#FuturaStd-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/*End Fonts Library*/
+
 a, a:hover{
     text-decoration: none;
+}
+
+*{
+    transition: all 1s ease;
 }
 /* =================================
            For Main Navigation
    ================================= */
+
+   /*LOGO*/
+.logo h2{
+    font-family: "FuturaStd-ExtraBold", sans-serif;
+}
+
+.right_nav a{
+    color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.right_nav a:nth-of-type(3){
+    font-weight: 600;
+    margin-left:3em;
+}
+.right_nav a:nth-of-type(4){
+    font-weight: 600;
+}
+
+
 
 
 /* =================================
@@ -11,40 +84,42 @@ a, a:hover{
    ================================= */
     .large_bgarea{
         width: 100%;
-        height: calc(100vh - 60px);
-        background: url(../images/bg.jpg);
-        background-repeat: no-repeat;
+        height: 90vh;
+        background-color:#ffffff;
         background-size: cover;
-        background-position: center;
+
     }
 
     .largeText{
-        width: 100%;
-        height: inherit;
+        width: 50%;
+        height: 75%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .largeText h1{
-        color:#ffffff;
-        text-transform: uppercase;
-        font-weight: 800;
-        font-family: "PT Sans",sans-serif;
+    .largeText p{
+        color:#19191a;
+        font-size: 4em;
+        line-height: 1.1;
+        font-family: 'GaramondPremrPro-Disp', sans-serif;
+
     }
 
     /* =================================
         For Arbitrary View
        ================================= */
 .fonts_area{
-    margin-top: -300px;
+    margin-top: -350px;
     overflow: hidden;
+    background: #efefef;
 }
 
 .expand_layout{
-    background: #ffffff;
+    background: #f7f7f7;
     padding: 20px;
     box-shadow: 0 0 2px #ddd;
 }
@@ -56,25 +131,129 @@ a, a:hover{
          For All Fonts Area
    ================================= */
 
-.allFonts{
-    border-top:1px solid #757575;
-    display: flex;
-    width: 100%;
-    height:50px;
-    justify-content: center;
-    align-items: center;
+/*.allFonts{*/
+    /*border-top:1px solid #757575;*/
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*height:50px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+/*}*/
+/*.allFonts a{*/
+    /*text-decoration: none;*/
+    /*color:#757575;*/
+    /*text-transform: capitalize;*/
+    /*font-size: 1.5em;*/
+/*}*/
+
+/*.allFonts a:hover{*/
+    /*text-decoration: none;*/
+    /*color:#757575;*/
+/*}*/
+
+
+/*change Style*/
+.loader-wrapper,
+.news-paginator {
+    position: relative;
+}
+.side-entries .more-entries-pagination-link {
+    margin-top: -1px;
+}
+.more-entries-pagination-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.025em;
+    color: #49494a;
     text-align: center;
 }
-.allFonts a{
+
+.more-entries-pagination-link:active,
+.more-entries-pagination-link:focus,
+.more-entries-pagination-link:hover {
+    color: #171717;
     text-decoration: none;
-    color:#757575;
-    text-transform: capitalize;
-    font-size: 1.5em;
 }
 
-.allFonts a:hover{
+.more-entries-pagination-link > span {
+    position: relative;
+    display: block;
+    padding: 68px 40px;
+}
+.more-entries-pagination-link > span > .count {
+    font-weight: 400;
+    color: #49494a;
+}
+
+.more-entries-pagination-link:active::before,
+.more-entries-pagination-link:focus::before,
+.more-entries-pagination-link:hover::before {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.more-entries-pagination-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.more-entries-pagination-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dddddd;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+.more-entries-pagination-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #c0c0c0;
+    transition-delay: 0s;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.more-entries-pagination-link:active,
+.more-entries-pagination-link:focus,
+.more-entries-pagination-link:hover {
+    color: #171717;
     text-decoration: none;
-    color:#757575;
 }
 
 
@@ -136,6 +315,35 @@ a, a:hover{
 .newsletter_form :-ms-input-placeholder {
     text-align: center;
 }
+
+/*Change Style*/
+.newsletter_form fieldset {
+    border: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.newsletter-submit {
+    background: transparent;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: calc(100% - 6px);
+    border: 0;
+    font-size: 1.5em;
+    line-height: .5;
+}
+.newsletter-submit span {
+    background: transparent;
+    cursor: pointer;
+}
+
+.newsletter_form button[type=submit]:focus{
+    outline: none;
+}
+
+
 
 .footerMid{
     border-top: 1px solid #3e3e3e;
@@ -218,6 +426,19 @@ a, a:hover{
 .back_to_top a:hover{
     color: #b4b4b4;
     text-decoration: none;
+}
+
+
+@media (max-width: 767.98px) {
+
+    .fonts_area{
+        margin-top: -100px;
+        overflow: hidden;
+    }
+    .largeText p {
+        font-size: 2em;
+        font-weight: 400;
+    }
 }
 
 
