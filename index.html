@@ -151,7 +151,7 @@
                         <div class="footer_middle">
                             <div class="back_to_top">
                                 <span>to top</span>
-                                <span><img src="images/up.png" alt=""></span>
+                                <span class="js-upArrow"><img src="images/up.png" alt=""></span>
                             </div>
                         </div>
                     </div>
@@ -189,6 +189,21 @@
     //             }
     //     })
     // })();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+<script>
+
+    var upArrow = anime({
+        targets: '.js-upArrow',
+        opacity:[1, 0],
+        translateX:[-10, 20],
+        easing: 'easeInOutQuad',
+        loop:true,
+        duration:1500
+
+    });
 </script>
 </body>
 </html>
